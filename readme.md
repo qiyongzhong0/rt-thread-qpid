@@ -26,19 +26,19 @@ qpid package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 
 ### 1.3依赖
 
-- 无
+- RT_Thread 4.0
 
 ## 2.使用
 
 ### 2.1接口函数说明
 
 #### void qpid_init(qpid_t *qpid);
-- 功能 ：初始化pid控制数据
+- 功能 ：初始化PID控制数据
 - 参数 ：qpid--控制数据指针
 - 返回 ：无
 
 #### void qpid_set_dst(qpid_t *qpid, float dst);
-- 功能 ：设置控制目标值
+- 功能 ：设置被控制量的目标值
 - 参数 ：qpid--控制数据指针
 - 参数 ：dst--控制目标值
 - 返回 ：无
@@ -46,13 +46,13 @@ qpid package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 #### void qpid_set_ratio(qpid_t *qpid, float kp, float ki, float kd);
 - 功能 ：设置控制比率系数
 - 参数 ：qpid--控制数据指针
-- 参数 ：kp--比例项控制系数值
-- 参数 ：ki--积分项控制系数值
-- 参数 ：kd--微分项控制系数值
+- 参数 ：kp--比例项系数值
+- 参数 ：ki--积分项系数值
+- 参数 ：kd--微分项系数值
 - 返回 ：无
 
 #### void qpid_set_lmt(qpid_t *qpid, float min, float max);
-- 功能 ：设置输出限值
+- 功能 ：设置计算输出的限值, 当限值不合法时将不会被使用
 - 参数 ：qpid--控制数据指针
 - 参数 ：min--输出最小限值
 - 参数 ：max--输出最大限值
@@ -62,13 +62,13 @@ qpid package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 - 功能 ：计算增量型控制值
 - 参数 ：qpid--控制数据指针
 - 参数 ：cur--被控制量的当前值
-- 返回 ：控制输入量的增量值
+- 返回 ：控制量的增量值
 
 #### float qpid_cal_pos(qpid_t *qpid, float cur);
 - 功能 ：计算位置型控制值
 - 参数 ：qpid--控制数据指针
 - 参数 ：cur--被控制量的当前值
-- 返回 ：控制输入量的位置值
+- 返回 ：控制量的位置值
 
 ### 2.3获取组件
 
