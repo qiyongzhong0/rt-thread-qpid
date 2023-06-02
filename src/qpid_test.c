@@ -7,10 +7,10 @@
  */
 
 #include <qpid.h>
+#include <rtthread.h>
 
 #ifdef QPID_USING_TEST
 
-#include <rtthread.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

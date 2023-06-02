@@ -9,7 +9,7 @@
 #ifndef __QPID_H__
 #define __QPID_H__
 
-#define QPID_USING_TEST         //使用测试
+//#define QPID_USING_TEST         //使用测试
 
 typedef struct{
     float dst;
