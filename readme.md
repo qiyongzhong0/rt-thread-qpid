@@ -73,7 +73,7 @@ qpid package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 ### 2.3获取组件
 
 - **方式1：**
-通过 *Env配置工具* 或 *RT-Thread studio* 开启软件包，根据需要配置各项参数；配置路径为 *RT-Thread online packages -> miscellaneous packages -> quick pid* 
+通过 *Env配置工具* 或 *RT-Thread studio* 开启软件包，根据需要配置各项参数；配置路径为 *RT-Thread online packages -> signalprocess packages -> qpid* 
 
 
 ### 2.4配置参数说明
