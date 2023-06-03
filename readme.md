@@ -85,5 +85,6 @@ qpid package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 ## 3. 联系方式
 
 * 维护：qiyongzhong
+* 主页：https://github.com/qiyongzhong0/rt-thread-qpid
 * 主页：https://gitee.com/qiyongzhong0/rt-thread-qpid
 * 邮箱：917768104@qq.com
